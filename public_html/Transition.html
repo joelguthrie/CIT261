@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<style> 
+    
+    /*in order to have a transition create a div*/
+div {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+      /*this tells the div what its going to do. In the order givin;
+      change background (to the color green) in two seconds
+      transform, or flip, 180 degrees in two seconds
+      widen the div by specified amount in two seconds, with an ease in out style after a half second delay */
+    transition: background 2s, transform 2s, width 2s ease-in-out 0.5s;
+}
+
+div:hover {
+    width: 400px;
+    background: green;
+    transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+<div></div>
+
+<h1>HOVER OVER THE SQUARE TO BE AMAZED</h1>
+
+</body>
+</html>
+

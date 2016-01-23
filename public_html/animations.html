@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mic's Animation example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            
+        .anidiv {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: relative;
+        /* this is the name of the animation */
+        -webkit-animation-name: example; /* Chrome, Safari, Opera */
+        animation-name: example;
+        /* this is how fast it will complet a loop */
+        -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+        animation-duration: 4s;
+        /* this is how meny times the animation will loop */
+        -webkit-animation-iteration-count: 4; /* Chrome, Safari, Opera */
+        animation-iteration-count: 4;
+        }
+
+        /* this is what colors it changes to and were it will move */
+        /* Chrome, Safari, Opera */
+        @-webkit-keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+        }
+    
+        </style>
+        
+    </head>
+    <body>
+        <!-- this is the square -->
+        <div class="anidiv"></div>
+    </body>
+</html>
